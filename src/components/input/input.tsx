@@ -41,10 +41,9 @@ export default function Input() {
       <button type="button" onClick={AddOrUpdateItem}>
         {editingItem !== null ? "Update" : "Add!"}
       </button>
-      <div>
-        <p>you wrote: {List.join(", ")}</p>
-      </div>
-      <div>
+      
+      <div className="card">
+      <h3>My List!</h3>
         <ul>
           {List.map((item) => (
             <li key={item}>
