@@ -37,8 +37,11 @@ export default function Input() {
         placeholder="write your list..."
         onChange={(e) => setInputData(e.target.value)}
         value={inputData}
+        className="input"
       />
-      <button type="button" onClick={AddOrUpdateItem}>
+      <button type="button" onClick={AddOrUpdateItem}
+      className="btn"
+      >
         {editingItem !== null ? "Update" : "Add!"}
       </button>
       
